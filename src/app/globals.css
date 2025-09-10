@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
+/* Custom Font Faces */
+@font-face {
+  font-family: 'Xerxes';
+  src: url('/fonts/Xerxes-10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('/fonts/04B_03_.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-xerxes: 'Xerxes', monospace;
+  --font-pixel: 'PixelFont', monospace;
 }
 
 @theme inline {
@@ -10,6 +29,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-xerxes: var(--font-xerxes);
+  --font-pixel: var(--font-pixel);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +44,20 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pixelated image rendering for pixel art */
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Custom utility classes for POW! fonts */
+.font-xerxes {
+  font-family: var(--font-xerxes);
+}
+
+.font-pixel {
+  font-family: var(--font-pixel);
 }
