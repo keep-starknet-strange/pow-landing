@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# POW! - THE Idle Clicker Game on Starknet
 
-## Getting Started
+POW! is THE idle clicker game on Starknet, where players can experience the thrill of building their own blockchain empire through enticing click-to-earn gameplay.
+
+This is the official landing page for POW!, built with Next.js 15 and featuring a retro pixel-art design aesthetic.
+
+## 🎮 About POW!
+
+POW! offers a fully onchain gaming experience where:
+
+- **Fully Onchain Experience**: All game state and progress stored directly on Starknet - your empire is truly yours
+- **Click-to-Earn Gameplay**: Engage in enticing idle clicker mechanics where every tap builds your blockchain empire and generates real value
+- **Session Keys & Paymaster**: Seamless gameplay with advanced session key technology and paymaster integration for smooth transactions
+- **Open Source**: Built transparently as an open source project - contribute, audit, and help shape the future of blockchain gaming
+
+## 🚀 Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the landing page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Download POW!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **iOS**: [Download on App Store](https://apps.apple.com/ch/app/pow-powered-by-starknet/id6749684084?l=en-GB)
+- **Android**: [Get it on Google Play](https://play.google.com/store/apps/details?id=com.starknet.pow&hl=en)
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 15 with App Router and Turbopack
+- **Language**: TypeScript with strict mode
+- **Styling**: Tailwind CSS v4
+- **Fonts**: Custom pixel fonts (Xerxes, PixelFont) + Geist family
+- **Assets**: Pixel art graphics and animations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── page.tsx        # Main landing page
+│   ├── layout.tsx      # Root layout with metadata
+│   └── globals.css     # Global styles and custom fonts
+public/
+├── fonts/              # Custom pixel fonts
+├── images/             # Game assets and pixel art
+└── favicon.png         # Custom favicon
+```
 
-## Deploy on Vercel
+## 🎨 Design Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Retro pixel-art aesthetic with custom fonts
+- Responsive design optimized for mobile and desktop
+- Pixel-perfect image rendering
+- Background patterns and overlays for immersive experience
+- Social media integration and download buttons
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 Links
+
+- **GitHub**: [https://github.com/keep-starknet-strange/pow](https://github.com/keep-starknet-strange/pow)
+- **Twitter**: [@StarkWareLtd](https://x.com/StarkWareLtd)
+- **Telegram**: [POW! Game](https://t.me/powgame)
+- **Starknet**: [https://starknet.io](https://starknet.io)
+
+## 🧪 Development Commands
+
+```bash
+# Start development server with Turbopack
+npm run dev
+
+# Build for production with Turbopack
+npm run build
+
+# Start production server
+npm start
+
+# Run ESLint
+npm run lint
+```
+
+## 📄 License
+
+© 2024 POW! - Keep Starknet Strange. Built by the Exploration Team.
+
+---
+
+*Powered by [Starknet](https://starknet.io) - Experience true blockchain gaming*
