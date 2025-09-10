@@ -53,7 +53,7 @@ export default function Home() {
             />
           </h2>
           <p className="text-xl text-black mb-12 max-w-2xl mx-auto leading-relaxed font-pixel">
-            POW! is THE idle clicker game on Starknet, where players can experience the thrill of building their own blockchain empire through enticing click-to-earn gameplay.
+            Click, Build, Mine. POW! is the ultimate idle clicker game on Starknet, where every tap builds your blockchain empire. Start small, click to grow, and rise through the ranks as you compete for the top of the leaderboard.
           </p>
           
           {/* Download Buttons */}
@@ -122,7 +122,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Click-to-Earn Gameplay</h4>
-              <p className="text-slate-300 font-pixel">Engage in enticing idle clicker mechanics where every tap builds your blockchain empire and generates real value.</p>
+              <p className="text-slate-300 font-pixel">Engage in enticing idle clicker mechanics where every tap builds your blockchain empire and generates value.</p>
               </div>
             </div>
 
@@ -138,8 +138,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Session Keys & Paymaster</h4>
-              <p className="text-slate-300 font-pixel">Seamless gameplay with advanced session key technology and paymaster integration for smooth transactions.</p>
+              <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">AVNU Paymaster</h4>
+              <p className="text-slate-300 font-pixel">Seamless gameplay integrated with AVNU's paymaster for smooth gas-free transactions.</p>
               </div>
             </div>
 
