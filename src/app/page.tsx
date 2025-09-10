@@ -139,7 +139,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">AVNU Paymaster</h4>
-              <p className="text-slate-300 font-pixel">Seamless gameplay integrated with AVNU's paymaster for smooth gas-free transactions.</p>
+              <p className="text-slate-300 font-pixel">Seamless gameplay integrated with AVNU&lsquo;s paymaster for smooth gas-free transactions.</p>
               </div>
             </div>
 
