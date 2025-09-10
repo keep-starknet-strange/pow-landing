@@ -2,34 +2,46 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
-      {/* Background Grid Pattern */}
-      <div className="absolute inset-0 opacity-10">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
         <Image
-          src="/images/background-grid.webp"
+          src="/images/background.png"
+          alt="Background"
+          fill
+          className="object-cover pixel-art"
+          priority
+        />
+      </div>
+      {/* Background Grid Pattern Overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/background-grid.png"
           alt="Background grid"
           fill
           className="object-cover pixel-art"
           priority
         />
       </div>
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-blue-900/10 to-slate-800/40"></div>
       {/* Hero Section */}
       <header className="container mx-auto px-4 py-16 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* POW Logo */}
           <div className="mb-6 flex justify-center">
             <Image
-              src="/images/pow-logo.png"
+              src="/images/POW.png"
               alt="POW! Logo"
-              width={200}
-              height={80}
-              className="pixel-art"
+              width={450}
+              height={180}
+              className="pixel-art drop-shadow-2xl"
+              style={{
+                filter: 'drop-shadow(0 0 20px rgba(0, 0, 0, 0.8)) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6))'
+              }}
               priority
             />
           </div>
-          <h1 className="text-6xl font-bold text-white mb-6 tracking-tight font-xerxes">
-            POW!
-          </h1>
           <h2 className="text-2xl text-blue-200 mb-8 font-xerxes">
             THE Idle Clicker Game on Starknet
           </h2>
@@ -54,7 +66,7 @@ export default function Home() {
               href="https://play.google.com/store/apps/details?id=com.starknet.pow&hl=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 flex items-center gap-3 min-w-[200px] font-pixel"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 flex items-center gap-3 min-w-[200px] font-pixel border-2 border-blue-400 hover:border-blue-300"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
@@ -81,15 +93,6 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Fully Onchain Experience</h4>
               <p className="text-slate-300 font-pixel">Experience true blockchain gaming with all game state and progress stored directly on Starknet. Your empire is truly yours.</p>
-              <div className="mt-4 flex justify-center">
-                <Image
-                  src="/images/blockchain-grid.webp"
-                  alt="Blockchain grid"
-                  width={48}
-                  height={48}
-                  className="pixel-art"
-                />
-              </div>
             </div>
 
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-700">
@@ -100,15 +103,6 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Click-to-Earn Gameplay</h4>
               <p className="text-slate-300 font-pixel">Engage in enticing idle clicker mechanics where every tap builds your blockchain empire and generates real value.</p>
-              <div className="mt-4 flex justify-center">
-                <Image
-                  src="/images/icon-dice.webp"
-                  alt="Gaming dice"
-                  width={32}
-                  height={32}
-                  className="pixel-art"
-                />
-              </div>
             </div>
 
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-700">
@@ -141,13 +135,12 @@ export default function Home() {
             <div className="mb-8 md:mb-0">
               <div className="flex items-center gap-3 mb-2">
                 <Image
-                  src="/images/starknet-pixel.webp"
-                  alt="Starknet logo"
-                  width={32}
-                  height={32}
+                  src="/images/pow-footer.png"
+                  alt="POW! Logo"
+                  width={120}
+                  height={48}
                   className="pixel-art"
                 />
-                <h5 className="text-2xl font-bold text-white font-xerxes">POW!</h5>
               </div>
               <p className="text-slate-400 font-pixel">Powered by Starknet</p>
             </div>
@@ -192,9 +185,13 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
+                <Image
+                  src="/images/starknet-symbol.png"
+                  alt="Starknet logo"
+                  width={20}
+                  height={20}
+                  className="w-5 h-5"
+                />
                 <span className="font-pixel">Starknet</span>
               </a>
             </div>

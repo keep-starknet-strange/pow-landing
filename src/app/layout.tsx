@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "POW! - THE Idle Clicker Game on Starknet",
   description: "POW! is THE idle clicker game on Starknet, where players can experience the thrill of building their own blockchain empire through enticing click-to-earn gameplay.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
