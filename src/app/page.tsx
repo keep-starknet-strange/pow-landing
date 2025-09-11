@@ -108,7 +108,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Fully Onchain Experience</h4>
-              <p className="text-slate-300 font-pixel">Experience true blockchain gaming with all game state and progress stored directly on Starknet. Your empire is truly yours.</p>
+              <p className="text-slate-300 font-pixel">Experience the true power of Starknet gaming, where all game actions are stored directly onchain forever. Your empire is truly yours.</p>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Click-to-Earn Gameplay</h4>
-              <p className="text-slate-300 font-pixel">Engage in enticing idle clicker mechanics where every tap builds your blockchain empire and generates value.</p>
+              <p className="text-slate-300 font-pixel">Click your way to earning STRK. Complete the game and Prestige to receive your first reward. ;) Compete with other miners on the leaderboard to see how far you can go!</p>
               </div>
             </div>
 
@@ -142,7 +142,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">AVNU Paymaster</h4>
-              <p className="text-slate-300 font-pixel">Seamless gameplay integrated with AVNU&lsquo;s paymaster for smooth gas-free transactions.</p>
+              <p className="text-slate-300 font-pixel">Seamless gameplay integrated with AVNU&lsquo;s paymaster for smooth gas-free transactions. You wont even believe its all onchain!</p>
               </div>
             </div>
 
@@ -159,7 +159,24 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Open Source</h4>
-              <p className="text-slate-300 font-pixel">Built transparently as an open source project. Contribute, audit, and help shape the future of blockchain gaming.</p>
+              <p className="text-slate-300 font-pixel">Built as an open source goldmine for building modern onchain apps. Contribute, audit, and help shape the future of blockchain gaming.</p>
+              </div>
+            </div>
+
+            <div className="relative p-8 text-center overflow-hidden pixel-art" style={{
+              backgroundImage: 'url(/images/window.webp)',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: '100% 100%',
+              backgroundPosition: 'center'
+            }}>
+              <div className="relative z-10">
+              <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Learn Blockchain</h4>
+              <p className="text-slate-300 font-pixel">Still don't understand blockchain and are too scared to ask? POW is a great way to gain a visual understanding with hands-on engaging gameplay!</p>
               </div>
             </div>
           </div>
