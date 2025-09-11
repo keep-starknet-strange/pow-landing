@@ -176,7 +176,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Learn Blockchain</h4>
-              <p className="text-slate-300 font-pixel">Still don't understand blockchain and are too scared to ask? POW is a great way to gain a visual understanding with hands-on engaging gameplay!</p>
+              <p className="text-slate-300 font-pixel">Still don&lsquo;t understand blockchain and are too scared to ask? POW is a great way to gain a visual understanding with hands-on engaging gameplay!</p>
               </div>
             </div>
           </div>
