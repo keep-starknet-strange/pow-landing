@@ -26,7 +26,7 @@ export default function Home() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-blue-900/10 to-slate-800/40"></div>
       {/* Hero Section */}
-      <header className="container mx-auto px-4 pt-16 text-center relative z-10">
+      <header className="px-4 pt-16 text-center relative z-10 bg-gradient-to-b from-[#101117] to-[#06060a] shadow-[0_8px_32px_rgba(0,0,0,0.8)]">
         <div className="max-w-4xl mx-auto">
           {/* POW Logo */}
           <div className="mb-6 flex justify-center">
@@ -35,14 +35,15 @@ export default function Home() {
               alt="POW! Logo"
               width={450}
               height={180}
-              className="pixel-art drop-shadow-2xl"
+              className="pixel-art drop-shadow-2xl rounded-lg"
               style={{
                 filter: 'drop-shadow(0 0 20px rgba(0, 0, 0, 0.8)) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6))'
               }}
               priority
             />
           </div>
-          <h2 className="text-2xl text-black mb-8 font-xerxes flex items-center justify-center gap-3">
+          <h2 className="text-slate-200 mb-8 font-xerxes flex items-center justify-center gap-3
+            text-lg sm:text-xl md:text-2xl">
             THE Idle Clicker Game on Starknet
             <Image
               src="/images/starknet-symbol.png"
@@ -52,17 +53,19 @@ export default function Home() {
               className="pixel-art"
             />
           </h2>
-          <p className="text-xl text-black mb-12 max-w-2xl mx-auto leading-relaxed font-pixel">
+          <p className="text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed font-pixel
+            text-md sm:text-lg md:text-xl
+          ">
             Click, Build, Mine. POW! is the ultimate idle clicker game on Starknet, where every tap builds your blockchain empire. Start small, click to grow, and rise through the ranks as you compete for the top of the leaderboard.
           </p>
           
           {/* Download Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pb-4">
             <a
               href="https://apps.apple.com/ch/app/pow-powered-by-starknet/id6749684084?l=en-GB"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 flex items-center gap-3 min-w-[200px] font-pixel"
+              className="bg-gradient-to-r from-slate-100 to-white hover:from-white hover:to-slate-100 text-black font-semibold py-3 px-8 rounded-xl transition-all duration-300 flex items-center gap-3 min-w-[200px] font-pixel border-2 border-slate-300 hover:border-slate-400 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -73,7 +76,7 @@ export default function Home() {
               href="https://play.google.com/store/apps/details?id=com.starknet.pow&hl=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 flex items-center gap-3 min-w-[200px] font-pixel border-2 border-blue-400 hover:border-blue-300"
+              className="bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 flex items-center gap-3 min-w-[200px] font-pixel border-2 border-emerald-400 hover:border-emerald-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
@@ -85,7 +88,7 @@ export default function Home() {
       </header>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 pb-16 relative z-10">
+      <section className="container mx-auto px-4 pb-16 pt-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-4xl font-bold text-black text-center mb-16 font-xerxes">
             Game Features
@@ -164,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-700 bg-slate-900/50 relative z-10">
+      <footer className="border-t border-slate-700 bg-[#101117] relative z-10">
         <div className="container mx-auto px-4 py-3">
           <div className="flex flex-row justify-between items-center">
             <div className="mb-0">
