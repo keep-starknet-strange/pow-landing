@@ -108,7 +108,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-white mb-4 font-xerxes">Fully Onchain Experience</h4>
-              <p className="text-slate-300 font-pixel">Experience the true power of Starknet gaming, where all game actions are stored directly onchain forever. Your empire is truly yours.</p>
+              <p className="text-slate-300 font-pixel">Experience the true power of Starknet gaming, where all game actions are executed onchain. Your empire is truly yours, forever!</p>
               </div>
             </div>
 
@@ -213,7 +213,7 @@ export default function Home() {
                 <span className="font-pixel text-xs sm:text-sm">GitHub</span>
               </a>
               <a
-                href="https://x.com/StarkWareLtd"
+                href="https://x.com/POW_sn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 sm:gap-2 text-slate-300 hover:text-white transition-colors"
