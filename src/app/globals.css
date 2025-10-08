@@ -61,3 +61,271 @@ body {
 .font-pixel {
   font-family: var(--font-pixel);
 }
+
+/* Desktop iframe height override */
+@media (min-width: 1024px) {
+  .desktop-iframe-height {
+    height: calc(100% - 60px) !important;
+  }
+}
+
+/* Diagonal background animation */
+@keyframes diagonalMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animated-background {
+  animation: diagonalMove 60s linear infinite;
+}
+
+/* Scroll reveal animations */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+.feature-row {
+  opacity: 0;
+}
+
+.feature-row.visible {
+  opacity: 1;
+}
+
+/* Bouncy download buttons */
+.download-button {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: all 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.download-button.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Delayed download button (Google Play) */
+.download-button-delayed {
+  transition-delay: 0.3s;
+}
+
+/* Parallelogram description boxes */
+.parallelogram-right {
+  background: black;
+  clip-path: polygon(0% 0%, 100% 0%, 98% 100%, 2% 100%);
+}
+
+.parallelogram-left {
+  background: black;
+  clip-path: polygon(0% 0%, 100% 0%, 98% 100%, 2% 100%);
+  transform: scaleX(-1);
+}
+
+.parallelogram-left p {
+  transform: scaleX(-1);
+}
+
+/* Flying Noggles animation */
+.flying-noggle {
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  touch-action: none;
+  animation: floatNoggle 30s infinite linear;
+}
+
+@keyframes floatNoggle {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(100px, -50px) rotate(90deg);
+  }
+  50% {
+    transform: translate(-50px, -100px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-100px, 50px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+/* Bouncy scroll animations for title bars and text */
+.title-section {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.title-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.title-section-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.title-section-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.description-section {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.description-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.description-section-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.description-section-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Leaderboard animations */
+.leaderboard-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.leaderboard-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.leaderboard-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.leaderboard-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Nouns sections animations */
+.nouns-section-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nouns-section-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nouns-section-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nouns-section-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Continuous bouncy title bar animations */
+@keyframes titleBarBounce {
+  0% {
+    transform: scaleX(1) scaleY(1);
+    transform-origin: left center;
+  }
+  25% {
+    transform: scaleX(0.9) scaleY(1.05);
+    transform-origin: left center;
+  }
+  50% {
+    transform: scaleX(0.95) scaleY(0.98);
+    transform-origin: left center;
+  }
+  75% {
+    transform: scaleX(0.92) scaleY(1.02);
+    transform-origin: left center;
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+    transform-origin: left center;
+  }
+}
+
+@keyframes titleBarBounceRight {
+  0% {
+    transform: scaleX(1) scaleY(1);
+    transform-origin: right center;
+  }
+  25% {
+    transform: scaleX(0.9) scaleY(1.05);
+    transform-origin: right center;
+  }
+  50% {
+    transform: scaleX(0.95) scaleY(0.98);
+    transform-origin: right center;
+  }
+  75% {
+    transform: scaleX(0.92) scaleY(1.02);
+    transform-origin: right center;
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+    transform-origin: right center;
+  }
+}
+
+/* Apply bouncy animation to specific title bar images */
+.title-bar-bouncy-left {
+  animation: titleBarBounce 2s ease-in-out infinite;
+}
+
+.title-bar-bouncy-right {
+  animation: titleBarBounceRight 2s ease-in-out infinite;
+}
