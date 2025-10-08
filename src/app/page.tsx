@@ -54,11 +54,11 @@ export default function Home() {
 
   const [activeTab, setActiveTab] = useState<'head' | 'body' | 'glasses' | 'accessories'>('head');
   const [traitOptions, setTraitOptions] = useState({
-    heads: [] as any[],
-    bodies: [] as any[],
-    glasses: [] as any[],
-    backgrounds: [] as any[],
-    accessories: [] as any[]
+    heads: [] as Array<{id: string; name: string; path: string}>,
+    bodies: [] as Array<{id: string; name: string; path: string}>,
+    glasses: [] as Array<{id: string; name: string; path: string}>,
+    backgrounds: [] as Array<{id: string; name: string; path: string}>,
+    accessories: [] as Array<{id: string; name: string; path: string}>
   });
 
   // Scroll animation state for feature rows
@@ -763,7 +763,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Paymaster</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Seamless gameplay integrated with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>'s paymaster for smooth gas-free transactions.</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Seamless gameplay integrated with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>&apos;s paymaster for smooth gas-free transactions.</p>
                   </div>
                 </div>
 
@@ -788,7 +788,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Learn</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don't understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don&apos;t understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
                   </div>
                 </div>
               </div>
@@ -870,7 +870,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Paymaster</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Seamless gameplay integrated with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>'s paymaster for smooth gas-free transactions.</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Seamless gameplay integrated with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>&apos;s paymaster for smooth gas-free transactions.</p>
                   </div>
                 </div>
 
@@ -893,7 +893,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Learn</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don't understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don&apos;t understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
                   </div>
                 </div>
 
@@ -989,7 +989,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-xs font-normal text-gray-600 font-xerxes z-10">Learn</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don't understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don&apos;t understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
                   </div>
                 </div>
 
