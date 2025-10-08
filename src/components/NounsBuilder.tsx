@@ -537,7 +537,7 @@ export default function NounsBuilder({
     };
 
     loadTraitOptions();
-  }, []);
+  }, [externalSelectedTraits, onTraitOptionsLoaded]);
 
   const handleTraitChange = (category: keyof typeof selectedTraits, value: string) => {
     console.log('Trait change:', { category, value, hasExternalCallback: !!externalOnTraitSelect });
@@ -575,35 +575,6 @@ export default function NounsBuilder({
     return options.find(option => option.path === selectedTraits[category]);
   };
 
-  const generateRandomNoun = () => {
-    console.log('Generating random noun with trait counts:', {
-      heads: traitOptions.heads.length,
-      bodies: traitOptions.bodies.length,
-      glasses: traitOptions.glasses.length,
-      backgrounds: traitOptions.backgrounds.length,
-      accessories: traitOptions.accessories.length
-    });
-    
-    const randomTraits = {
-      head: traitOptions.heads[Math.floor(Math.random() * traitOptions.heads.length)]?.path || '',
-      body: traitOptions.bodies[Math.floor(Math.random() * traitOptions.bodies.length)]?.path || '',
-      glasses: traitOptions.glasses[Math.floor(Math.random() * traitOptions.glasses.length)]?.path || '',
-      background: '', // No background
-      accessories: traitOptions.accessories[Math.floor(Math.random() * traitOptions.accessories.length)]?.path || ''
-    };
-    
-    console.log('Selected random traits:', randomTraits);
-    if (externalOnTraitSelect) {
-      // Update each trait individually using external callback
-      Object.entries(randomTraits).forEach(([traitType, traitPath]) => {
-        if (traitPath) {
-          externalOnTraitSelect(traitType, traitPath);
-        }
-      });
-    } else {
-      setInternalSelectedTraits(randomTraits);
-    }
-  };
 
   if (showPreviewOnly) {
     return (
@@ -759,9 +730,9 @@ export default function NounsBuilder({
                 key={tab.key}
                 onClick={() => {
                   if (externalOnTabChange) {
-                    externalOnTabChange(tab.key as any);
+                    externalOnTabChange(tab.key as 'head' | 'body' | 'glasses' | 'accessories');
                   } else {
-                    setInternalActiveTab(tab.key as any);
+                    setInternalActiveTab(tab.key as 'head' | 'body' | 'glasses' | 'accessories');
                   }
                 }}
                 className={`px-2 py-1 rounded font-pixel text-[8px] lg:text-[12px] lg:font-bold transition-colors whitespace-nowrap flex-shrink-0 ${
