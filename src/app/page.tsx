@@ -608,8 +608,7 @@ export default function Home() {
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
-                    <span className="hidden sm:inline">Download on App Store</span>
-                    <span className="sm:hidden">App Store</span>
+                    <span>Download on App Store</span>
                   </a>
                 </div>
                 <div className={`download-button download-button-delayed ${visibleDownloadButtons[1] ? 'visible' : ''}`}>
@@ -622,8 +621,7 @@ export default function Home() {
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                     </svg>
-                    <span className="hidden sm:inline">Get it on Google Play</span>
-                    <span className="sm:hidden">Google Play</span>
+                    <span>Get it on Google Play</span>
                   </a>
                 </div>
               </div>
@@ -676,7 +674,7 @@ export default function Home() {
                 height={120}
                 className="pixel-art"
               />
-              <h2 className="absolute inset-0 flex items-center justify-start pl-12 text-white font-xerxes text-2xl">
+              <h2 className="absolute inset-0 flex items-center justify-start pl-8 sm:pl-12 text-white font-xerxes text-lg sm:text-xl lg:text-2xl">
                 Game Features
               </h2>
             </div>
@@ -692,8 +690,8 @@ export default function Home() {
                 height={60}
                 className="pixel-art title-bar-bouncy-left"
               />
-              <p className="absolute inset-0 flex items-center justify-start pl-12 pr-8 text-white font-pixel text-lg font-bold leading-relaxed">
-                Powered by&nbsp;<a href="https://www.starknet.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 underline">Starknet</a>.
+              <p className="absolute inset-0 flex items-center justify-start pl-8 sm:pl-12 pr-4 sm:pr-8 text-white font-pixel text-sm sm:text-base lg:text-lg font-bold leading-relaxed title-bar-text">
+                <span>Powered by&nbsp;</span><a href="https://www.starknet.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 underline title-bar-link">Starknet</a><span>.</span>
               </p>
             </div>
           </div>
@@ -740,8 +738,8 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Fully Onchain</h4>
-                  <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Experience the true power of <span className="bg-purple-800 text-white px-1 rounded">Starknet</span> gaming, where all game actions are executed onchain.</p>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Fully Onchain</h4>
+                  <p className="text-white font-pixel text-xs sm:text-sm leading-tight text-left pl-1">Experience the true power of <span className="bg-purple-800 text-white px-1 rounded">Starknet</span> gaming, where all game actions are executed onchain.</p>
                 </div>
 
                 <div className="relative p-1 text-center aspect-square flex flex-col justify-center items-center" style={{
@@ -750,8 +748,8 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Click-to-Earn</h4>
-                  <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Click your way to earning <span className="bg-purple-800 text-white px-1 rounded">STRK</span>. Complete the game and Prestige to receive your first reward.</p>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Click-to-Earn</h4>
+                  <p className="text-white font-pixel text-xs sm:text-sm leading-tight text-left pl-1">Click your way to earning <span className="bg-purple-800 text-white px-1 rounded">STRK</span>. Complete the game and Prestige to receive your first reward.</p>
                 </div>
 
                 {/* Tablet and Desktop items */}
@@ -761,7 +759,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Paymaster</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Paymaster</h4>
                   <div className="flex items-center justify-center h-full">
                     <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Seamless gameplay integrated with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>&apos;s paymaster for smooth gas-free transactions.</p>
                   </div>
@@ -774,7 +772,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Open Source</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Open Source</h4>
                   <div className="flex items-center justify-center h-full">
                     <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Built as an <span className="bg-purple-800 text-white px-1 rounded">open-source</span> goldmine for building modern onchain apps.</p>
                   </div>
@@ -786,7 +784,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Learn</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Learn</h4>
                   <div className="flex items-center justify-center h-full">
                     <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don&apos;t understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
                   </div>
@@ -868,7 +866,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Paymaster</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Paymaster</h4>
                   <div className="flex items-center justify-center h-full">
                     <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Seamless gameplay integrated with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>&apos;s paymaster for smooth gas-free transactions.</p>
                   </div>
@@ -880,7 +878,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Open Source</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Open Source</h4>
                   <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Built as an <span className="bg-purple-800 text-white px-1 rounded">open-source</span> goldmine for building modern onchain apps.</p>
                 </div>
 
@@ -891,7 +889,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Learn</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Learn</h4>
                   <div className="flex items-center justify-center h-full">
                     <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don&apos;t understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
                   </div>
@@ -904,7 +902,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10">Coming Soon</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Coming Soon</h4>
                   <div className="flex items-center justify-center h-full">
                     <p className="text-white font-pixel text-sm leading-tight text-left pl-1">More exciting features are <span className="bg-purple-800 text-white px-1 rounded">coming soon</span> to enhance your gaming experience!</p>
                   </div>
@@ -987,7 +985,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs font-normal text-gray-600 font-xerxes z-10">Learn</h4>
+                  <h4 className="absolute top-0 left-1 text-xs font-normal text-gray-600 font-xerxes z-10 feature-title">Learn</h4>
                   <div className="flex items-center justify-center h-full">
                     <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don&apos;t understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
                   </div>
@@ -999,7 +997,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-xs font-normal text-gray-600 font-xerxes z-10">Coming Soon</h4>
+                  <h4 className="absolute top-0 left-1 text-xs font-normal text-gray-600 font-xerxes z-10 feature-title">Coming Soon</h4>
                   <p className="text-white font-pixel text-sm leading-tight text-left pl-1">More exciting features are <span className="bg-purple-800 text-white px-1 rounded">coming soon</span> to enhance your gaming experience!</p>
                 </div>
 
@@ -1143,7 +1141,7 @@ export default function Home() {
                 height={120}
                 className="pixel-art"
               />
-              <h2 className="absolute inset-0 flex items-center justify-start pl-12 text-white font-xerxes text-2xl">
+              <h2 className="absolute inset-0 flex items-center justify-start pl-8 sm:pl-12 text-white font-xerxes text-lg sm:text-xl lg:text-2xl">
                 Nouns Builder ⌐◨-◨
               </h2>
             </div>
@@ -1159,16 +1157,16 @@ export default function Home() {
                 height={60}
                 className="pixel-art title-bar-bouncy-left"
               />
-              <p className="absolute inset-0 flex items-center justify-start pl-12 pr-8 text-white font-pixel text-lg font-bold leading-relaxed">
-                POW is&nbsp;<a href="https://nouns.wtf/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 underline">Nounish </a>. Design your Noun in POW!
+              <p className="absolute inset-0 flex items-center justify-start pl-8 sm:pl-12 pr-4 sm:pr-8 text-white font-pixel text-sm sm:text-base lg:text-lg font-bold leading-relaxed title-bar-text">
+                <span>POW is&nbsp;</span><a href="https://nouns.wtf/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 underline title-bar-link">Nounish </a><span>. Design your Noun in POW!</span>
               </p>
             </div>
           </div>
           
-          <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-1 sm:gap-2 lg:gap-1">
             {/* Nouns Preview - Left */}
-            <div id="nouns-section-0" className={`relative p-1 lg:p-4 aspect-square max-w-64 mx-auto lg:max-w-none w-full nouns-section-left ${visibleNounsSections[0] ? 'visible' : ''}`}>
-              <div className="flex items-center justify-center mt-2 lg:mt-2 mb-1 lg:mb-1 h-full relative">
+            <div id="nouns-section-0" className={`relative p-0.5 sm:p-1 lg:p-4 aspect-square max-w-48 sm:max-w-64 mx-auto lg:max-w-none w-full nouns-section-left ${visibleNounsSections[0] ? 'visible' : ''}`}>
+              <div className="flex items-center justify-center mt-1 sm:mt-2 lg:mt-2 mb-0.5 sm:mb-1 lg:mb-1 h-full relative">
                 {/* Overlay border */}
                 <div className="absolute inset-0 pointer-events-none z-10" style={{
                   backgroundImage: 'url(/images/blockchain_grid_scaled_10x_pngcrushed.png)',
@@ -1176,7 +1174,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h3 className="absolute top-0 left-1 lg:left-3 text-sm md:text-base lg:text-[22px] font-normal text-gray-600 font-xerxes z-30">
+                  <h3 className="absolute top-0 left-1 lg:left-3 text-xs sm:text-sm md:text-base lg:text-[22px] font-normal text-gray-600 font-xerxes z-30">
                     Preview
                   </h3>
                 </div>
@@ -1192,7 +1190,7 @@ export default function Home() {
                   <div className="absolute bottom-[33px] lg:bottom-[53px] left-1/2 transform -translate-x-1/2 z-30">
                     <button
                       onClick={generateRandomNoun}
-                      className="text-white font-xerxes py-0.5 px-1.5 md:py-1 md:px-2 rounded text-[10px] md:text-xs shadow-lg hover:shadow-xl transform hover:scale-105 hover:opacity-90"
+                      className="text-white font-xerxes py-0.5 px-0.5 sm:py-0.5 sm:px-1 md:py-1 md:px-2 rounded text-[4px] sm:text-[9px] md:text-[10px] lg:text-[11px] xl:text-xs shadow-lg hover:shadow-xl transform hover:scale-105 hover:opacity-90 random-noun-button"
                       style={{ backgroundColor: 'rgba(67, 13, 145)' }}
                     >
                       🎲 Random Noun
@@ -1203,7 +1201,7 @@ export default function Home() {
             </div>
 
             {/* Chain Connector - Between Preview and Builder */}
-            <div className="flex items-center justify-center absolute left-1/2 top-[58%] transform -translate-x-1/2 -translate-y-1/2 z-40">
+            <div className="hidden sm:flex items-center justify-center absolute left-1/2 top-[58%] transform -translate-x-1/2 -translate-y-1/2 z-40">
               {/* Mobile: 1 chain component */}
               <div className="flex items-center sm:hidden">
                 <Image
@@ -1269,8 +1267,8 @@ export default function Home() {
             </div>
 
             {/* Nouns Builder Controls - Right */}
-            <div id="nouns-section-1" className={`relative p-1 lg:p-4 aspect-square max-w-64 mx-auto lg:max-w-none w-full nouns-section-right ${visibleNounsSections[1] ? 'visible' : ''}`}>
-              <div className="flex items-center justify-center mt-2 lg:mt-2 mb-1 lg:mb-1 h-full relative">
+            <div id="nouns-section-1" className={`relative p-0.5 sm:p-1 lg:p-4 aspect-square max-w-48 sm:max-w-64 mx-auto lg:max-w-none w-full nouns-section-right ${visibleNounsSections[1] ? 'visible' : ''}`}>
+              <div className="flex items-center justify-center mt-1 sm:mt-2 lg:mt-2 mb-0.5 sm:mb-1 lg:mb-1 h-full relative">
                 {/* Overlay border */}
                 <div className="absolute inset-0 pointer-events-none z-10" style={{
                   backgroundImage: 'url(/images/blockchain_grid_scaled_10x_pngcrushed.png)',
@@ -1278,7 +1276,7 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h3 className="absolute top-0 left-1 lg:left-3 text-sm md:text-base lg:text-[22px] font-normal text-gray-600 font-xerxes z-30">
+                  <h3 className="absolute top-0 left-1 lg:left-3 text-xs sm:text-sm md:text-base lg:text-[22px] font-normal text-gray-600 font-xerxes z-30">
                     Select
                   </h3>
                 </div>
@@ -1370,8 +1368,7 @@ export default function Home() {
                       <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                       </svg>
-                      <span className="hidden sm:inline">Download on App Store</span>
-                      <span className="sm:hidden">App Store</span>
+                      <span>Download on App Store</span>
                     </a>
                   </div>
                   <div className={`download-button download-button-delayed ${visibleDownloadButtons[1] ? 'visible' : ''}`}>
@@ -1384,8 +1381,7 @@ export default function Home() {
                       <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                       </svg>
-                      <span className="hidden sm:inline">Get it on Google Play</span>
-                      <span className="sm:hidden">Google Play</span>
+                      <span>Get it on Google Play</span>
                     </a>
                   </div>
                 </div>
