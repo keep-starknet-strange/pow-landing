@@ -580,7 +580,7 @@ export default function NounsBuilder({
     return (
       <div className={`relative ${className} h-full`}>
         <div className="flex flex-col items-center justify-center h-full">
-          <div className="relative w-40 h-40 sm:w-34 sm:h-34 lg:w-56 lg:h-56 aspect-square mb-4 sm:mb-3 overflow-hidden">
+          <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-56 lg:h-56 aspect-square mb-2 sm:mb-3 overflow-hidden">
             {/* Body */}
             {getSelectedTrait('body')?.path && (
               <div className="absolute inset-0 flex items-center justify-center">
@@ -717,9 +717,9 @@ export default function NounsBuilder({
         </div>
 
         {/* Controls Section */}
-        <div className="w-full flex flex-col max-h-40 mt-5 mb-[65px] sm:max-h-44 sm:mb-[37px] lg:mb-0 lg:mt-10 lg:max-h-80 overflow-hidden">
+        <div className="w-full flex flex-col max-h-36 mt-2 mb-[45px] sm:max-h-32 sm:mt-3 sm:mb-[65px] md:max-h-40 md:mt-5 md:mb-[37px] lg:mb-0 lg:mt-10 lg:max-h-80 overflow-hidden">
           {/* Tab Navigation */}
-          <div className="flex gap-1 mb-1 w-full flex-shrink-0 ml-[10px] mt-[5px] sticky top-0 z-10">
+          <div className="flex gap-0.5 sm:gap-1 mb-0.5 sm:mb-1 w-full flex-shrink-0 ml-[3px] sm:ml-[5px] md:ml-[10px] mt-[1px] sm:mt-[2px] md:mt-[5px] sticky top-0 z-10">
             {[
             { key: 'head', label: 'Head', showCount: false },
             { key: 'body', label: 'Body', showCount: false },
@@ -735,7 +735,7 @@ export default function NounsBuilder({
                     setInternalActiveTab(tab.key as 'head' | 'body' | 'glasses' | 'accessories');
                   }
                 }}
-                className={`px-2 py-1 rounded font-pixel text-[8px] lg:text-[12px] lg:font-bold transition-colors whitespace-nowrap flex-shrink-0 ${
+                className={`px-0.5 py-0.5 sm:px-1 sm:py-0.5 md:px-2 md:py-1 rounded font-pixel text-[4px] sm:text-[9px] md:text-[10px] lg:text-[11px] xl:text-xs lg:font-bold transition-colors whitespace-nowrap flex-shrink-0 nouns-builder-button ${
                   activeTab === tab.key
                     ? 'text-white'
                     : 'text-white hover:opacity-90'
@@ -752,7 +752,7 @@ export default function NounsBuilder({
 
           {/* Tab Content */}
           <div className="bg-transparent rounded flex-1 min-h-0 w-full overflow-y-auto">
-            <div className="grid grid-cols-6 lg:grid-cols-8 h-full gap-1 p-1">
+            <div className="grid grid-cols-5 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 h-full gap-0.5 sm:gap-1 p-0.5 sm:p-1 trait-selection-grid">
               {(() => {
                 let currentOptions: TraitOption[] = [];
                 switch (activeTab) {
