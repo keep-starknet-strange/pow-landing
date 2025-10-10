@@ -879,7 +879,7 @@ export default function Home() {
                   backgroundPosition: 'center'
                 }}>
                   <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Open Source</h4>
-                  <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Built as an <span className="bg-purple-800 text-white px-1 rounded">open-source</span> goldmine for building modern onchain apps.</p>
+                  <p className="text-white font-pixel text-sm leading-tight text-left pl-1">The code is <span className="bg-purple-800 text-white px-1 rounded">open-source</span>. Fork it, remix it, build your own.</p>
                 </div>
 
                 {/* Tablet only - Learn */}
