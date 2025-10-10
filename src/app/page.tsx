@@ -1108,7 +1108,7 @@ export default function Home() {
                 </h3>
                 <div className="w-full h-full relative z-30 overflow-hidden">
                   <iframe 
-                    src="https://dune.com/embeds/5845925/9461478"
+                    src="https://dune.com/embeds/5941703/9590190"
                     width="100%" 
                     height="100%"
                     frameBorder="0"
