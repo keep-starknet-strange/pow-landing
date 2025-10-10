@@ -194,6 +194,15 @@ body {
     line-height: 1.2;
     top: 2px !important;
   }
+  
+  /* Zoom out leaderboards more on mobile */
+  .leaderboard-left iframe,
+  .leaderboard-right iframe {
+    transform: scale(0.6) !important;
+    transform-origin: top left !important;
+    width: 166.67% !important; /* 100% / 0.6 = 166.67% */
+    height: 166.67% !important; /* 100% / 0.6 = 166.67% */
+  }
 }
 
 /* Extra small screens (iPhone SE, etc.) */
@@ -201,6 +210,15 @@ body {
   .feature-title {
     font-size: 8px !important;
     top: 1px !important;
+  }
+  
+  /* Even more zoom out for very small screens */
+  .leaderboard-left iframe,
+  .leaderboard-right iframe {
+    transform: scale(0.5) !important;
+    transform-origin: top left !important;
+    width: 200% !important; /* 100% / 0.5 = 200% */
+    height: 200% !important; /* 100% / 0.5 = 200% */
   }
 }
 
@@ -322,6 +340,60 @@ body {
   }
   100% {
     transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes floatNoggle2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-80px, 60px) rotate(-90deg);
+  }
+  50% {
+    transform: translate(60px, 80px) rotate(-180deg);
+  }
+  75% {
+    transform: translate(80px, -60px) rotate(-270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+
+@keyframes floatNoggle3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(120px, 30px) rotate(45deg);
+  }
+  50% {
+    transform: translate(-30px, 120px) rotate(90deg);
+  }
+  75% {
+    transform: translate(-120px, -30px) rotate(135deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(180deg);
+  }
+}
+
+@keyframes floatNoggle4 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-60px, -80px) rotate(-45deg);
+  }
+  50% {
+    transform: translate(80px, -60px) rotate(-90deg);
+  }
+  75% {
+    transform: translate(60px, 80px) rotate(-135deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-180deg);
   }
 }
 

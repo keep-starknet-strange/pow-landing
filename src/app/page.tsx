@@ -739,7 +739,7 @@ export default function Home() {
                   backgroundPosition: 'center'
                 }}>
                   <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Fully Onchain</h4>
-                  <p className="text-white font-pixel text-xs sm:text-sm leading-tight text-left pl-1">Experience the true power of <span className="bg-purple-800 text-white px-1 rounded">Starknet</span> gaming, where all game actions are executed onchain.</p>
+                  <p className="text-white font-pixel text-xs sm:text-sm leading-tight text-left pl-1">Your progress lives on <span className="bg-purple-800 text-white px-1 rounded">Starknet</span>, not some server that can vanish.</p>
                 </div>
 
                 <div className="relative p-1 text-center aspect-square flex flex-col justify-center items-center" style={{
@@ -749,7 +749,7 @@ export default function Home() {
                   backgroundPosition: 'center'
                 }}>
                   <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Click-to-Earn</h4>
-                  <p className="text-white font-pixel text-xs sm:text-sm leading-tight text-left pl-1">Click your way to earning <span className="bg-purple-800 text-white px-1 rounded">STRK</span>. Complete the game and Prestige to receive your first reward.</p>
+                  <p className="text-white font-pixel text-xs sm:text-sm leading-tight text-left pl-1">Tap through the game, hit Prestige, and get <span className="bg-purple-800 text-white px-1 rounded">10 STRK</span>.</p>
                 </div>
 
                 {/* Tablet and Desktop items */}
@@ -759,9 +759,9 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
                 }}>
-                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Paymaster</h4>
+                  <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Gas Paid</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Seamless gameplay integrated with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>&apos;s paymaster for smooth gas-free transactions.</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">We cover the fees with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>. You just play.</p>
                   </div>
                 </div>
 
@@ -774,7 +774,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Open Source</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Built as an <span className="bg-purple-800 text-white px-1 rounded">open-source</span> goldmine for building modern onchain apps.</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">The code is <span className="bg-purple-800 text-white px-1 rounded">open-source</span>. Fork it, remix it, build your own.</p>
                   </div>
                 </div>
 
@@ -786,7 +786,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Learn</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">Still don&apos;t understand blockchain? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> is a great way to gain visual understanding!</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">New to crypto? <span className="bg-purple-800 text-white px-1 rounded">POW!</span> make it click!</p>
                   </div>
                 </div>
               </div>
@@ -1108,7 +1108,7 @@ export default function Home() {
                 </h3>
                 <div className="w-full h-full relative z-30 overflow-hidden">
                   <iframe 
-                    src="https://dune.com/embeds/5845925/9461478"
+                    src="https://dune.com/embeds/5941703/9590190"
                     width="100%" 
                     height="100%"
                     frameBorder="0"
