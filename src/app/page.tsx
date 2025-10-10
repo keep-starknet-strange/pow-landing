@@ -761,7 +761,7 @@ export default function Home() {
                 }}>
                   <h4 className="absolute top-0 left-1 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[11.5px] font-normal text-gray-600 font-xerxes z-10 feature-title">Gas Paid</h4>
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">We cover the fees with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>&apos;. You just play.</p>
+                    <p className="text-white font-pixel text-sm leading-tight text-left pl-1">We cover the fees with <span className="bg-purple-800 text-white px-1 rounded">AVNU</span>. You just play.</p>
                   </div>
                 </div>
 
